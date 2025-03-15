@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HTML Tables Example</title>
+    <style>
+        table {
+            width: 50%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            font-size: 18px;
+            text-align: left;
+        }
+        th, td {
+            padding: 8px;
+            border: 1px solid black;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        h2 {
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Ex 1 : Basic HTML Table</h2>
+    <p>Create a simple table with company details (Name, Contact, Country).</p>
+
+    <h3>HTML Table</h3>
+    <table>
+        <tr>
+            <th>Company</th>
+            <th>Contact</th>
+            <th>Country</th>
+        </tr>
+        <tr>
+            <td>Alfreds Futterkiste</td>
+            <td>Maria Anders</td>
+            <td>Germany</td>
+        </tr>
+        <tr>
+            <td>Centro comercial Moctezuma</td>
+            <td>Francisco Chang</td>
+            <td>Mexico</td>
+        </tr>
+        <tr>
+            <td>Ernst Handel</td>
+            <td>Roland Mendel</td>
+            <td>Austria</td>
+        </tr>
+        <tr>
+            <td>Island Trading</td>
+            <td>Helen Bennett</td>
+            <td>UK</td>
+        </tr>
+        <tr>
+            <td>Laughing Bacchus Winecellars</td>
+            <td>Yoshi Tannamuri</td>
+            <td>Canada</td>
+        </tr>
+        <tr>
+            <td>Magazzini Alimentari Riuniti</td>
+            <td>Giovanni Rovelli</td>
+            <td>Italy</td>
+        </tr>
+    </table>
+
+
+    <h2>Ex 3: HTML cospan Attribute</h2>
+<table>
+<tr>
+    <th>Name</th>
+    <th>Expense</th>
+</tr>
+<tr>
+    <td>Arun</td>
+    <td>$10</td>
+</tr>
+<tr>
+    <td>Priya</td>
+    <td>$8</td>
+</tr>
+<tr></tr>
+</table>
+
+
+
+
+<h2>Ex 4: Table with Name & Age</h2>
+<p>Display names, ages, and an average age row.</p>
+
+<table>
+    <tr>
+        <th>FULL NAME</th>
+        <th>AGE</th>
+    </tr>
+    <tr>
+        <td>Fabio Crimo</td>
+        <td>20</td>
+    </tr>
+    <tr>
+        <td>Jasmin Brown</td>
+        <td>18</td>
+    </tr>
+    <tr>
+        <td>James Wick</td>
+        <td>30</td>
+    </tr>
+    <tr>
+        <td>Donald Dawn</td>
+        <td>29</td>
+    </tr>
+    <tr>
+        <td><b>Average Age</b></td>
+        <td>22</td>
+    </tr>
+</table>
+
+<h2>Ex 5: Colspan & Rowspan Usage</h2>
+<p>Merge table cells for structured data.</p>
+
+<table>
+    <tr>
+        <th colspan="2" rowspan="2">Header (spans 2 columns and 2 rows)</th>
+        <td>data</td>
+    </tr>
+    <tr>
+        <td>data</td>
+    </tr>
+    <tr>
+        <td>data</td>
+        <td>data</td>
+        <td>data</td>
+    </tr>
+</table>
+
+<h2>Ex 6: Complex Table Structure</h2>
+<p>Use <b>colspan</b> and <b>rowspan</b> for number alignment.</p>
+
+<table>
+    <tr>
+        <th colspan="5">Number</th>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+        <td>4</td>
+        <td>5</td>
+    </tr>
+    <tr>
+        <td rowspan="2">6</td>
+        <td>7</td>
+        <td colspan="2">8</td>
+        <td>9</td>
+    </tr>
+    <tr>
+        <td>10</td>
+        <td>11</td>
+        <td>12</td>
+        <td>13</td>
+    </tr>
+    <tr>
+        <td>14</td>
+        <td>15</td>
+        <td colspan="2">16</td>
+        <td>17</td>
+    </tr>
+</table>
+
+
+<!-- ex7 -->
+<h2>Ex 7: Time Table</h2>
+<p>Create a class schedule with merged cells.</p>
+
+<table>
+    <tr>
+        <th colspan="6">Time Table</th>
+    </tr>
+    <tr>
+        <th>Hours</th>
+        <th>Mon</th>
+        <th>Tues</th>
+        <th>Wed</th>
+        <th>Thurs</th>
+        <th>Fri</th>
+    </tr>
+    <tr>
+        <td rowspan="2">Science</td>
+        <td>Maths</td>
+        <td>Science</td>
+        <td>Maths</td>
+        <td>Science</td>
+        <td>Arts</td>
+    </tr>
+    <tr>
+        <td>Science</td>
+        <td>Maths</td>
+        <td>Science</td>
+        <td>Maths</td>
+        <td>Arts</td>
+    </tr>
+    <tr>
+        <th colspan="6">Lunch</th>
+    </tr>
+    <tr>
+        <td>Science</td>
+        <td>Maths</td>
+        <td>Science</td>
+        <td>Maths</td>
+        <td>Project</td>
+    </tr>
+    <tr>
+        <td>Science</td>
+        <td>Maths</td>
+        <td>Science</td>
+        <td>Maths</td>
+        <td>Project</td>
+    </tr>
+</table>
+
+<h2>Ex 8: Adding Images</h2>
+<p>Display an image with <b>src</b>, <b>alt</b>, <b>height</b>, and <b>width</b>.</p>
+
+<h3>Using Image in HTML</h3>
+<p>Attributes: "height", "width" and "alt"</p>
+
+<img src="https://www.w3schools.com/html/img_girl.jpg" alt="HTML Image Example" width="500" height="200">
+
+<h2>Ex 9: Simple HTML Form</h2>
+<p>Form with Name, Email, and Submit button.</p>
+
+<form>
+    <fieldset>
+        <legend><b>Please Fill And Submit Form:</b></legend>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name"><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email"><br><br>
+
+        <input type="submit" value="Submit">
+    </fieldset>
+</form>
+
+
+<!-- ex 10 -->
+<h2>Ex 10: Radio Buttons in Form</h2>
+<p>Add radio buttons for color selection.</p>
+
+<form>
+    <fieldset>
+        <legend><b>Please Fill And Submit Form :</b></legend>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name"><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email"><br><br>
+
+        <p>Select A color you like :</p>
+        <input type="radio" id="red" name="color" value="Red">
+        <label for="red">Red</label><br>
+
+        <input type="radio" id="green" name="color" value="Green">
+        <label for="green">Green</label><br>
+
+        <input type="radio" id="blue" name="color" value="Blue">
+        <label for="blue">Blue</label><br><br>
+
+        <input type="submit" value="Submit">
+    </fieldset>
+</form>
+
+<h2>Ex 11: Dropdown Select</h2>
+<p>Include a dropdown to choose colors.</p>
+
+<form>
+    <fieldset>
+        <legend><b>Please Fill And Submit Form :</b></legend>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name"><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email"><br><br>
+
+        <p>Select A color you like :</p>
+        <input type="radio" id="red" name="color" value="Red">
+        <label for="red">Red</label><br>
+
+        <input type="radio" id="green" name="color" value="Green">
+        <label for="green">Green</label><br>
+
+        <input type="radio" id="blue" name="color" value="Blue">
+        <label for="blue">Blue</label><br><br>
+
+        <label for="favoriteColor">Select your favorite color:</label>
+        <select id="favoriteColor" name="favoriteColor">
+            <option value="red">Red</option>
+            <option value="green">Green</option>
+            <option value="blue">Blue</option>
+            <option value="yellow">Yellow</option>
+        </select><br><br>
+
+        <input type="submit" value="Submit">
+    </fieldset>
+</form>
+
+<h2>Ex 12: Checkboxes in Form</h2>
+<p>Add checkboxes for skill levels.</p>
+
+<form>
+    <fieldset>
+        <legend><b>Please Fill And Submit Form :</b></legend>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name"><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email"><br><br>
+
+        <p>Select your skill levels:</p>
+        <input type="checkbox" id="beginner" name="skill" value="Beginner">
+        <label for="beginner">Beginner</label><br>
+
+        <input type="checkbox" id="intermediate" name="skill" value="Intermediate">
+        <label for="intermediate">Intermediate</label><br>
+
+        <input type="checkbox" id="advanced" name="skill" value="Advanced">
+        <label for="advanced">Advanced</label><br><br>
+
+        <input type="submit" value="Submit">
+    </fieldset>
+</form>
+
+
+<form>
+    <fieldset>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name"><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email"><br><br>
+
+        <p>Select A color you like:</p>
+        <input type="radio" id="red" name="color" value="Red">
+        <label for="red">Red</label><br>
+
+        <input type="radio" id="green" name="color" value="Green">
+        <label for="green">Green</label><br>
+
+        <input type="radio" id="blue" name="color" value="Blue">
+        <label for="blue">Blue</label><br><br>
+
+        <label for="favoriteColor">Select your favorite color:</label>
+        <select id="favoriteColor" name="favoriteColor">
+            <option value="red">Red</option>
+            <option value="green">Green</option>
+            <option value="blue">Blue</option>
+        </select><br><br>
+
+        <p>Choose your skill level:</p>
+        <input type="checkbox" id="beginner" name="skill" value="Beginner">
+        <label for="beginner">Beginner</label><br>
+
+        <input type="checkbox" id="intermediate" name="skill" value="Intermediate">
+        <label for="intermediate">Intermediate</label><br>
+
+        <input type="checkbox" id="advanced" name="skill" value="Advanced">
+        <label for="advanced">Advanced</label><br><br>
+
+        <input type="submit" value="Submit">
+    </fieldset>
+</form>
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+    }
+    .image-container {
+        width: 80%;
+        margin: 20px auto;
+        padding: 10px;
+        border-bottom: 1px solid #ccc;
+    }
+    .image-container img {
+        width: 100%;
+        max-width: 600px;
+        height: auto;
+        display: block;
+    }
+    .image-container h3 {
+        margin: 10px 0;
+        color: #333;
+    }
+    .video-container {
+        width: 80%;
+        margin: 20px auto;
+        text-align: center;
+    }
+</style>
+
+
+<h2>Ex 13 : Image Showcasing</h2>
+    <p><i>Use &lt;div&gt; to structure images with descriptions.</i></p>
+
+    <div class="image-container">
+        <h3>Beautiful Sunset</h3>
+        <img src="sunset.jpg" alt="Beautiful Sunset">
+        <p>This is an image of a sunset over the ocean. The golden hues reflecting on the water create a mesmerizing scene.</p>
+    </div>
+
+    <div class="image-container">
+        <h3>Majestic Mountains</h3>
+        <img src="mountains.jpg" alt="Majestic Mountains">
+        <p>Behind the majestic mountains stands a tall peak. The snow-capped peaks look sky-high, and the valley below is serene.</p>
+    </div>
+
+    <h2>Ex 14 : Embedding Videos</h2>
+    <p><i>Use &lt;iframe&gt; to embed a YouTube video.</i></p>
+
+    <div class="video-container">
+        <h3>Using Videos in HTML</h3>
+        <iframe width="560" height="315" 
+                src="https://www.youtube.com/embed/tgbNymZ7vqY" 
+                frameborder="0" 
+                allowfullscreen>
+        </iframe>
+    </div>
+
+    <!-- ex 15 -->
+    <h2>Ex 15 : Advanced Table with Summary</h2>
+    <p><i>Student grading table with average and minimum scores.</i></p>
+
+    <table>
+        <tr>
+            <th colspan="2" rowspan="2">Student Name</th>
+            <th colspan="3">Labs</th>
+            <th rowspan="2">Avg</th>
+        </tr>
+        <tr>
+            <th>Lab1</th>
+            <th>Lab2</th>
+            <th>Lab3</th>
+        </tr>
+        <tr>
+            <td>Sol</td>
+            <td>Rosenberg</td>
+            <td>100</td>
+            <td>100</td>
+            <td>100</td>
+            <td>100.0</td>
+        </tr>
+        <tr>
+            <td>Frank</td>
+            <td>Rizzo</td>
+            <td>50</td>
+            <td>60</td>
+            <td>90</td>
+            <td>66.6</td>
+        </tr>
+        <tr>
+            <td>Ali</td>
+            <td>Kam</td>
+            <td>90</td>
+            <td>80</td>
+            <td>60</td>
+            <td>76.6</td>
+        </tr>
+        <tr>
+            <th colspan="2">Summary</th>
+            <td><b>Avg</b></td>
+            <td>80.0</td>
+            <td>83.3</td>
+            <td>81.1</td>
+          
+        </tr>
+        <tr>
+            <td colspan="2"></td>
+            <td><b>Min</b></td>
+            <td>50</td>
+            <td>60</td>
+            <td>60</td>
+     
+        </tr>
+    </table>
+</body>
+</html>
