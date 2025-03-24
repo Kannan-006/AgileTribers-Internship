@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kitten Kare</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #444;
+            color: white;
+            padding: 10px;
+            text-align: left;
+        }
+        nav {
+            background-color: #666;
+            padding: 10px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-right: 15px;
+        }
+        .container {
+            display: flex;
+            margin: 20px;
+        }
+        .main-content {
+            flex: 3;
+            padding: 20px;
+        }
+        .sidebar {
+            flex: 1;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Kitten Kare</h1>
+    </header>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+    </nav>
+
+    <div class="container">
+        <section class="main-content">
+            <h2>Welcome!</h2>
+            <img src="./images/mark-basarab-y421kXlUOQk-unsplash.jpg" alt="A Bear in the Water">
+            <p>
+                The domestic cat (<em>Felis catus</em>) is a small, usually furry, carnivorous mammal.
+                It is often called the housecat when kept as an indoor pet or simply the cat when
+                there is no need to distinguish it from other felids and felines.
+            </p>
+        </section>
+
+        <aside class="sidebar">
+            <h3>Cat Body Types</h3>
+            <ul>
+                <li>Oriental</li>
+                <li>Foreign</li>
+                <li>Semi-Foreign</li>
+                <li>Semi-Cobby</li>
+                <li>Cobby</li>
+            </ul>
+        </aside>
+    </div>
+
+</body>
+</html>
