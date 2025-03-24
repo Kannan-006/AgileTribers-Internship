@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Gallery</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        header {
+            background: #f1f1f1;
+            padding: 20px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .gallery {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+        .gallery img {
+            width: 30%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .description {
+            padding: 20px;
+            max-width: 800px;
+            margin: auto;
+            text-align: justify;
+        }
+        footer {
+            background: #333;
+            color: white;
+            padding: 10px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        Welcome UI Photo Gallery
+    </header>
+
+    <div class="gallery">
+        <img src="./images/joshua-kettle-LjIaxbbvG40-unsplash.jpg" alt="Nature Image 1">
+        <img src="./images/logan-weaver-lgnwvr-Got4BJx8C4M-unsplash.jpg" alt="Nature Image 2">
+        <img src="./images/marek-piwnicki-lf8r_vEyu_I-unsplash.jpg" alt="Nature Image 3">
+    </div>
+
+    <div class="description">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fugit, voluptate quos ipsam fugiat nisi 
+        non maxime blanditiis quisquam ut voluptatem possimus perferendis. Lorem ipsum dolor sit amet, 
+        consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
+
+    <footer>
+        © 2023 My Simple Web Page. All rights reserved.
+    </footer>
+
+</body>
+</html>

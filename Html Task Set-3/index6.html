@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Awesome Blog</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #4a90e2;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            font-size: 24px;
+        }
+        nav {
+            text-align: right;
+            padding: 10px;
+            background: #ffffff;
+        }
+        nav a {
+            text-decoration: none;
+            color: #333;
+            margin: 0 10px;
+            font-size: 16px;
+        }
+        .container {
+            display: flex;
+            padding: 20px;
+        }
+        .main-content {
+            flex: 3;
+            padding: 20px;
+            background: white;
+            margin-right: 20px;
+            border-radius: 5px;
+        }
+        .sidebar {
+            flex: 1;
+            padding: 20px;
+            background: #ffcc80;
+            border-radius: 5px;
+        }
+        img {
+            width: 100%;
+            height: 700px;
+            border-radius: 5px;
+        }
+        article {
+            margin-bottom: 20px;
+        }
+        h2 {
+            color: #333;
+        }
+        .sidebar ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .sidebar ul li {
+            margin: 10px 0;
+        }
+        .sidebar ul li a {
+            text-decoration: none;
+            color: #000;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        My Awesome Blog
+    </header>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+    </nav>
+
+    <img src="./images/chris-yang-MfXLjDlUI4M-unsplash.jpg" alt="Blog Banner">
+
+    <div class="container">
+        <section class="main-content">
+            <article>
+                <h2>Title of the first blog</h2>
+                <p><strong>By Aziz Ali</strong></p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed congue commodo neque, nec laoreet leo consequat id...</p>
+            </article>
+            <article>
+                <h2>Title of the second blog</h2>
+                <p><strong>By Aziz Ali</strong></p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed congue commodo neque, nec laoreet leo consequat id...</p>
+            </article>
+        </section>
+
+        <aside class="sidebar">
+            <h2>Useful Links</h2>
+            <ul>
+                <li><a href="#">AzizAli.com</a></li>
+                <li><a href="#">ILoveCoding.org</a></li>
+            </ul>
+        </aside>
+    </div>
+
+</body>
+</html>
