@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karka UI Layout</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+
+        .container {
+            width: 90%;
+            margin: 0 auto;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 30px;
+        }
+
+        .links {
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+        }
+
+        .links a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 18px;
+        }
+
+        .main-content {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 30px;
+        }
+
+        .left, .right {
+            width: 48%;
+        }
+
+        .right {
+            background-color: #f1f1f1;
+            padding: 15px;
+            border-radius: 8px;
+        }
+
+        .left {
+            padding: 15px;
+            background-color: white;
+            border-radius: 8px;
+        }
+
+        .section {
+            margin-bottom: 30px;
+        }
+
+        .section h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .section p {
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        .section img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 30px;
+        }
+
+        footer p {
+            font-size: 14px;
+        }
+
+        .icons {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 10px;
+        }
+
+        .icons i {
+            font-size: 30px;
+            color: #6c757d;
+            cursor: pointer;
+            transition: color 0.3s;
+        }
+
+        .icons i:hover {
+            color: #007bff;
+        }
+        @media (max-width: 768px) {
+            .main-content {
+                flex-direction: column;
+            }
+
+            .left, .right {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Karka UI Layout</h1>
+            <div class="links">
+                <a href="#">Home</a>
+                <a href="#">Products</a>
+                <a href="#">Services</a>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+            </div>
+        </header>
+
+        <div class="main-content">
+            <div class="left">
+                <div class="section">
+                    <h2>TITLE HEADING</h2>
+                    <p>Title description, Dec 7, 2017</p>
+                    <p>Some text..</p>
+                </div>
+
+                <div class="section">
+                    <h2>TITLE HEADING</h2>
+                    <p>Title description, Sept 2, 2017</p>
+                    <p>Some text..</p>
+                </div>
+            </div>
+
+            <div class="right">
+                <div class="section">
+                    <h2>About Me</h2>
+                    <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
+                </div>
+
+                <div class="section">
+                    <h2>Popular Post</h2>
+                    <p>Some text..</p>
+                    <div class="icons">
+                        <i class="fa fa-facebook"></i>
+                        <i class="fa fa-twitter"></i>
+                        <i class="fa fa-instagram"></i>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h2>Follow Me</h2>
+                    <p>Some text..</p>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p>© Copyright 2011</p>
+        </footer>
+    </div>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</body>
+</html>

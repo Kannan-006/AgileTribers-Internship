@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complex Layout</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: 1fr; 
+            grid-template-rows: auto 50px auto auto; 
+            gap: 10px;
+            width: 90%;
+            margin: 0 auto;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #444;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+
+        .slideshow {
+            background-color: #555;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 10px;
+            padding: 20px;
+        }
+
+        .slideshow > div {
+            background-color: #666;
+            height: 200px;
+            text-align: center;
+            line-height: 200px;
+            color: white;
+            font-size: 18px;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+    
+        @media (max-width: 768px) {
+            .container {
+                grid-template-columns: 1fr;
+            }
+
+            .slideshow {
+                grid-template-columns: 1fr; 
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Header</h1>
+        </header>
+        <nav>
+            <h2>Navigation Bar</h2>
+        </nav>
+        <div class="slideshow">
+            <div>Slideshow Item 1</div>
+            <div>Slideshow Item 2</div>
+            <div>Slideshow Item 3</div>
+        </div>
+        <footer>
+            <p>Footer</p>
+        </footer>
+    </div>
+
+</body>
+</html>

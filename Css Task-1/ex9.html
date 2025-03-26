@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 10px; 
+            width: 90%;
+            margin: 0 auto;
+        }
+
+        header {
+            background-color: #80deea;
+            grid-column: 1 / 4;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .intro-copy {
+            background-color: #b2ebf2;
+            padding: 20px;
+        }
+
+        .hero-image {
+            background-color: #4caf50;
+            color: white;
+            padding: 20px;
+        }
+
+        .call-to-action {
+            background-color: #ffeb3b;
+            color: black;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .features {
+            background-color: #80deea;
+            padding: 20px;
+            grid-column: 1 / 4;
+        }
+
+        .more-copy {
+            background-color: #b2ebf2;
+            padding: 20px;
+        }
+
+        footer {
+            background-color: #80deea;
+            grid-column: 1 / 4;
+            padding: 20px;
+            text-align: center;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                grid-template-columns: 1fr;
+            }
+
+            .intro-copy, .hero-image, .call-to-action, .more-copy {
+                grid-column: 1;
+            }
+
+            header, .features, footer {
+                grid-column: 1 / 2;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>Header</header>
+        <div class="intro-copy">Intro Copy</div>
+        <div class="hero-image">Hero Image</div>
+        <div class="call-to-action">Call to Action</div>
+        <div class="features">Features</div>
+        <div class="more-copy">More Copy</div>
+        <div class="call-to-action">Call to Action</div>
+        <footer>Footer</footer>
+    </div>
+
+</body>
+</html>

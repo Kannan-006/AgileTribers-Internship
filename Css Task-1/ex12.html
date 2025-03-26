@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Footer Layout</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            height: 100vh; 
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #555;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .content {
+            display: flex;
+            flex: 1; 
+            margin: 20px;
+        }
+
+        .main-content {
+            background-color: #f4f4f4;
+            flex: 3;
+            padding: 20px;
+            margin-right: 20px;
+        }
+
+        .sidebar {
+            background-color: #ddd;
+            flex: 1;
+            padding: 20px;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0; 
+        }
+
+       
+        @media (max-width: 768px) {
+            .content {
+                flex-direction: column;
+                margin: 10px;
+            }
+
+            .main-content {
+                margin-right: 0;
+                margin-bottom: 10px;
+            }
+
+            .sidebar {
+                margin-top: 10px;
+            }
+
+            footer {
+                padding: 20px;
+            }
+
+            header {
+                padding: 15px;
+            }
+
+            nav {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Header</h1>
+    </header>
+
+    <nav>
+        <h2>Navigation</h2>
+    </nav>
+
+    <div class="content">
+        <div class="main-content">
+            <h2>Main Content</h2>
+            <p>This is where the main content goes.</p>
+        </div>
+        <div class="sidebar">
+            <h3>Sidebar</h3>
+            <p>This is the sidebar content.</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>© Copyright 2022</p>
+    </footer>
+</body>
+</html>
