@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wireframe Layout</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 100%;
+}
+
+.header {
+    background-color: #cce7ff;
+    padding: 20px;
+    text-align: center;
+}
+
+.intro,
+.features,
+.more-copy {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+}
+
+.intro {
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.intro-copy,
+.hero-image,
+.call-to-action {
+    background-color: #cce7ff;
+    padding: 20px;
+    text-align: center;
+    flex: 1;
+}
+
+.call-to-action {
+    background-color: #f1ff79;
+}
+
+.features {
+    background-color: #cce7ff;
+    text-align: center;
+}
+
+.features-content {
+    background-color: #cce7ff;
+    padding: 20px;
+    text-align: center;
+}
+
+.more-copy {
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.copy,
+.cta {
+    background-color: #cce7ff;
+    padding: 20px;
+    text-align: center;
+}
+
+.cta {
+    background-color: #f1ff79;
+}
+
+.footer {
+    background-color: #cce7ff;
+    padding: 20px;
+    text-align: center;
+}
+
+    </style>
+    <div class="container">
+ 
+        <header class="header">
+            <h1>Header</h1>
+        </header>
+        <section class="intro">
+            <div class="intro-copy">Intro Copy</div>
+            <div class="hero-image">Hero Image</div>
+            <div class="call-to-action">Call to Action</div>
+        </section>
+
+     
+        <section class="features">
+            <div class="features-content">Features</div>
+        </section>
+
+        
+        <section class="more-copy">
+            <div class="copy">More copy</div>
+            <div class="cta">Call to Action</div>
+        </section>
+
+       
+        <footer class="footer">
+            <p>Footer</p>
+        </footer>
+    </div>
+</body>
+</html>

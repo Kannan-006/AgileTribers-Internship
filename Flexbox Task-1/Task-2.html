@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 2 - Flexbox Layout</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+        
+        .flex-container {
+            display: flex;
+            flex-direction: column;
+            min-height: 400px;
+            border: 2px solid #333;
+        }
+        
+        header {
+            background-color: #2196F3;
+            padding: 20px;
+            text-align: center;
+            color: white;
+        }
+        
+        nav {
+            background-color: #0b7dda;
+            padding: 10px;
+            color: white;
+        }
+        
+        main {
+            background-color: #ddd;
+            padding: 20px;
+            flex: 1;
+        }
+        
+        .tractor {
+            background-color: #ff9800;
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="flex-container">
+        <header>Header</header>
+        <nav>Navigation Bar</nav>
+        <main>Main Content</main>
+        <div class="tractor">Tractor</div>
+    </div>
+</body>
+</html>
