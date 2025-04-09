@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced Flex Layout</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header, footer {
+            background-color: #2c3e50;
+            color: white;
+            padding: 1.5rem;
+            text-align: center;
+        }
+
+        .main-container {
+            display: flex;
+            flex: 1;
+        }
+
+        .sidebar {
+            background-color: #34495e;
+            color: white;
+            width: 250px;
+            padding: 1.5rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+        }
+
+        .content {
+            flex: 1;
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        .hero {
+            background-color: #3498db;
+            color: white;
+            padding: 3rem 2rem;
+            text-align: center;
+            border-radius: 8px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 200px;
+        }
+
+        .main-content {
+            background-color: #ecf0f1;
+            padding: 2rem;
+            border-radius: 8px;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .extra-content {
+            background-color: #bdc3c7;
+            padding: 2rem;
+            border-radius: 8px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 120px;
+        }
+
+        .related-section {
+            display: flex;
+            justify-content: space-between;
+            align-items: stretch;
+            gap: 1.5rem;
+        }
+
+        .related-images, .related-posts {
+            flex: 1;
+            padding: 1.5rem;
+            background-color: #f8f9fa;
+            border-radius: 8px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 150px;
+        }
+
+   
+
+        @media (max-width: 768px) {
+            .main-container {
+                flex-direction: column;
+            }
+            
+            .sidebar {
+                width: 100%;
+                order: 2;
+            }
+            
+            .related-section {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Header</h1>
+    </header>
+    
+    <div class="main-container">
+        <aside class="sidebar">
+            <h2>Sidebar</h2>
+            <p>Navigation and additional content</p>
+        </aside>
+        
+        <main class="content">
+            <section class="hero">
+                <div>
+                    <h2>Hero Section</h2>
+                    <p>Main featured content area</p>
+                </div>
+            </section>
+            
+            <section class="main-content">
+                <h2>Main Content</h2>
+                <p>This is the primary content area with important information.</p>
+            </section>
+            
+            <section class="extra-content">
+                <p>Additional supporting content or features</p>
+            </section>
+            
+            <div class="related-section">
+                <div class="related-images">
+                    <h3>Related Images</h3>
+                    <p>Visual content gallery</p>
+                </div>
+                <div class="related-posts">
+                    <h3>Related Posts</h3>
+                    <p>Additional reading materials</p>
+                </div>
+            </div>
+        </main>
+    </div>
+    
+  
+</body>
+</html>
